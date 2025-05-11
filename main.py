@@ -64,12 +64,11 @@ async def catalog_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     elif data == 'catalog_guarantee':
         await q.edit_message_text(
-            "🛡️ *Гарант*
-Мы гарантируем возврат денег при несоответствии товара.
-"
+            "🛡️ *Гарант*\nМы гарантируем возврат денег при несоответствии товара.\n"
             "Подробнее: https://t.me/shadychina_guarantee",
             parse_mode='Markdown'
         )
+
 
     elif data == 'catalog_order':
         kb = [
