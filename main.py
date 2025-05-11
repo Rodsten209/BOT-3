@@ -83,8 +83,7 @@ async def catalog_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif data.startswith('plat_'):
         platform = data.split('_')[1]
         await q.edit_message_text(
-            f"Ваш заказ будет сделан через *{platform}*.
-"
+            f"Ваш заказ будет сделан через *{platform}*."
             "Уточните детали здесь: https://t.me/shadychina_order_form",
             parse_mode='Markdown'
         )
