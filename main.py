@@ -91,7 +91,7 @@ async def catalog_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif data == 'catalog_wholesale':
         await q.edit_message_text(
             "📦 *Опт/дропшиппинг*"
-В разработке. Скоро автоматизируем процесс.",
+"В разработке. Скоро автоматизируем процесс.",
             parse_mode='Markdown'
         )
 
